@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29c9701bf9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#headed">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Desginer</p>
+            <h1>Hi, I am <span>Sam</span><br>from India</h1>
+        </div>
+    </div>
+</div>  
+<!-- ABOUT -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est fuga deserunt quibusdam deleniti tempora tempore facilis quas a harum obcaecati, impedit perferendis iste dolor odio commodi. Distinctio, suscipit corporis.</p>
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="opentab('skills', this)">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience', this)">Experience</p>
+                    <p class="tab-link" onclick="opentab('education', this)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desgining Web App Interfaces</li>
+                        <li><span>Web Devlopment</span><br>Desgining Web Development</li>
+                        <li><span>CP</span><br>Competitive Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>Training at ET Institute</li>
+                        <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017-2019</span><br>UI/UX Desgin Executive at Coin Digital Ltd.</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Training at ET Institute</li>
+                        <li><span>2016</span><br>MBA from IIMC</li>
+                        <li><span>2014</span><br>BTech from IIIT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------SERVICES------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desgin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi? Non maxime architecto porro dolor ullam magni adipisci iusto minus, est odio, deserunt laborum! Mollitia culpa expedita aliquam necessitatibus quia.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi? Non maxime architecto porro dolor ullam magni adipisci iusto minus, est odio, deserunt laborum! Mollitia culpa expedita aliquam necessitatibus quia.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-commit"></i>
+                <h2>Problem Solver</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi? Non maxime architecto porro dolor ullam magni adipisci iusto minus, est odio, deserunt laborum! Mollitia culpa expedita aliquam necessitatibus quia.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---------------------- PORTFOLIO ------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the like minded people across the globe. Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the like minded people across the globe. Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the like minded people across the globe. Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!-- ------CONTACT -->
+<div id="contact">
+    <div class="conatiner">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>conatct@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>3278689452</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="file:///C:/Users/SAMIKHYA/Desktop/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                     
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Kevin. Hope you like my first web application. <i class="fa-solid fa-face-grin"></i></p>
+    </div>
+</div>
+<script src="script.js"></script>
+
+    
+</body>
+</html>
